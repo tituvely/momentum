@@ -6,6 +6,30 @@ function handleTitleClick() {
     title.textContent = "Title was clicked!";
 }
 
+function handleMouseEnter() {
+    console.log("mouseenter");
+}
+
+function handleMouseLeave() {
+    console.log("mouseleave");
+}
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+    alert("Stop Copy");
+}
+
+function handleWindowOffline() {
+    alert("SOS no WIFI");
+}
+
+function handleWindowOnline() {
+    alert("WIFI CONNECTED");
+}
+
 title.onclick = handleTitleClick;
 title.addEventListener("mouseenter", handleMouseEnter);
 title.addEventListener("mouseleave", handleMouseLeave);
